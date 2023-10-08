@@ -1,0 +1,49 @@
+$kakaoRegular:"KakaoRegular";
+$kakaoBold:"KakaoBold";
+
+@font-face {
+    font-family:KakaoRegular;
+    src: url(/kakao_fonts/KakaoOTFRegular.otf);
+}
+@font-face {
+    font-family:KakaoBold;
+    src: url(/kakao_fonts/KakaoOTFBold.otf);
+}
+
+div#main_content {
+    width:100%;
+    height:1000px;
+}
+
+
+h3 {
+    width:90%;
+    height:176px;
+    margin:0px auto;
+    position: relative;
+    left:0;
+    top:0;
+
+    img {
+        position:absolute;
+        margin-top: 65px;
+        width:130px;
+        height:130px;
+    }
+    
+    em {
+        width:100%;
+        height:100%;
+        font:bold 36px "$KakaoRegular";
+        position: absolute;
+        top:70px;
+        left:150px;
+    }
+    span {
+        font:bold 36px "$KakaoRegular";
+        display: block;
+        position:absolute;
+        top:140px;
+        left:150px;
+    }
+}
