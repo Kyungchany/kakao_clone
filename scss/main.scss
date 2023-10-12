@@ -61,6 +61,10 @@ h3 {
             padding:0px 18px;
             box-sizing: border-box;
 
+            // &:last-child {
+            //     min-width: 666px;
+            // }
+
             &:first-child.area_sticky {
                 position: sticky;
                 top:170px;
@@ -83,11 +87,17 @@ div.inner_item {
     padding:0;
 }
 div.item_card {
+    
     overflow:hidden;
     position:relative;
     border-radius: 14px;
     background-color:white;
     box-shadow: 4px 12px 30px 6px rgba(0,0,0,0.3);
+
+    &:nth-child(-n+2) {
+        margin-top:0;
+    
+    }
 
     .wrap_cont {
         display: block;
@@ -96,13 +106,22 @@ div.item_card {
         box-sizing: border-box;
     }
     
-    // .info_cate {
-    //     display:block;
-    //     height: 36px;
-    //     margin-top:-1px;
-    //     padding-right: 20px;
-    // }
+    .card_half {
+        // position:absolute;
+        // left:0px;
+        // top:0px;
+
+    }
+    
+    .info_cate {
+        display:block;
+        height: 36px;
+        margin-top:-1px;
+        padding-right: 20px;
+        font-size: 0px;
+    }
 }
+
 
 span.ico_cate {
     display: inline-block;
@@ -162,7 +181,6 @@ span.ico_cate {
         margin-top:13px;
         height: 64px;
         font:bold 22px/32px "맑은 고딕";
-        font-family: "맑은 고딕";
         color:black;
         -webkit-box-orient: vertical;
         -webkit-line-clamp:2;
@@ -190,6 +208,10 @@ span.ico_cate {
 }
 .txt_keyword {
     color:#666666;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 3px;
+    
 }
 
 .btn_share {
@@ -206,6 +228,8 @@ span.ico_cate {
     font-size: 21px;
     
 }
+
+
 
 
 

@@ -77,11 +77,21 @@ div.item_card {
   background-color: white;
   box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.3);
 }
+div.item_card:nth-child(-n+2) {
+  margin-top: 0;
+}
 div.item_card .wrap_cont {
   display: block;
   position: relative;
   padding: 25px 24px 0;
   box-sizing: border-box;
+}
+div.item_card .info_cate {
+  display: block;
+  height: 36px;
+  margin-top: -1px;
+  padding-right: 20px;
+  font-size: 0px;
 }
 
 span.ico_cate {
@@ -145,7 +155,6 @@ span.ico_cate {
   margin-top: 13px;
   height: 64px;
   font: bold 22px/32px "맑은 고딕";
-  font-family: "맑은 고딕";
   color: black;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -173,6 +182,9 @@ span.ico_cate {
 
 .txt_keyword {
   color: #666666;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 3px;
 }
 
 .btn_share {
