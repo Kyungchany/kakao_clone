@@ -30,7 +30,7 @@ header {
 }
 
 div#topmenu {
-  width: 90%;
+  width: 1296px;
   height: 100%;
   margin: 0px auto;
   text-align: center;
@@ -81,4 +81,10 @@ div#area_util ul {
 }
 div#area_util ul li > span {
   font-size: 20px;
+}
+
+@media screen and (max-width: 1439px) {
+  div#topmenu {
+    width: 952px;
+  }
 }
